@@ -1,0 +1,120 @@
+:root{
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+  --red-:#FF3131;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+}
+
+body{
+  background-color: var(--Grey-900);
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(red,yellow); */
+
+}
+.card{
+  background-color: var(--Grey-800);
+  padding: 26px;
+  border-radius: 10px;
+  width: 350px;
+  margin:0 auto;
+  resize: both;
+  overflow: auto;
+}
+
+@keyframes img {
+  0%{
+   transform: translatey(05px);
+  }
+  100%{
+    transform: translatey(-05px);
+  }
+}
+img{
+  animation: img 2s infinite alternate-reverse;
+  max-width: 100%;
+  height: auto;
+}
+.first_div img{
+ width: 100px;
+ border-radius: 100%;
+ margin-bottom: 25px;
+ border:2px solid
+}
+
+.first_div  {
+  padding:10px;
+}
+
+.first_div h1 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.first_div h4 {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.first_div p {
+  margin-top: 25px;
+}
+
+.second_div{
+  padding: 10px;
+}
+.second_div h4{
+  background-color: var(--Grey-700);
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  
+.second_div a {
+  color: white;
+  text-decoration: none;
+}
+
+.second_div h4:hover {
+  background-color: var(--red-);
+  color: black;
+}
+
+
+.second_div div:last-child h4{
+  background-color: var(--Grey-800);
+}
+
+.second_div div:last-child h4 a{
+  color: #FF3131;
+}
+
+@media screen and (max-width:375px)
+ 
+{
+  
+  .card{
+    width: 85%;
+  }
+
+
+
+}
